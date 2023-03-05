@@ -1,6 +1,11 @@
 from utils import finding_ides, getting_json_from_web, key_in_list
 
+
 link = "https://www.jsonkeeper.com/b/FGAS"
+
+test = finding_ides(link, 10, False)
+
+print(test)
 
 file = getting_json_from_web(link)
 list_of_id = finding_ides(link)

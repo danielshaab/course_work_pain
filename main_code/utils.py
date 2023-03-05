@@ -25,6 +25,7 @@ def finding_ides(link, quantity=5, sort_type=True):
 
     dates.sort(reverse=sort_type)
     dates = dates[0:quantity]
+
     for ides in dates:
         list_of_id.append(dict_of_dates[ides])
     return list_of_id
